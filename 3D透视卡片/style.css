@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/bg.jpeg");
+  background-size: cover;
+}
+
+.wrap {
+  width: 1200px;
+  min-height: 100px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  /* grid-template-columns: 300px; */
+  justify-content: space-between;
+  /* justify-content: center; */
+}
+
+.card-item {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: -1px 15px 30px -12px rgba(0, 0, 0, 0.1);
+  transform-style: preserve-3d;
+}
+
+.role {
+  width: 100%;
+  height: 220px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: url("../3D透视卡片/images/listbg1.jpeg") no-repeat;
+  background-position: 100% 100%;
+  background-size: 130%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.role img {
+  width: 400px;
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  transform: translateZ(50px);
+}
+
+.des {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  transform: translateZ(40px);
+}
+
+.des h6 {
+  color: #f6901a;
+  font-weight: 400;
+}
+
+.des h1 {
+  padding: 10px;
+  font-size: 26px;
+}
+
+.des p {
+  text-align: left;
+  font-size: 14px;
+  padding: 0 16px;
+}
+
+.btn-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f6901a;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  transform-style: preserve-3d;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 0;
+  transform-style: preserve-3d;
+}
+
+.btn h3 {
+  margin-bottom: 4px;
+  color: #fff;
+  transform: translateZ(40px);
+}
+
+.btn span {
+  font: 14px;
+  color: #fff;
+  transform: translateZ(40px);
+}

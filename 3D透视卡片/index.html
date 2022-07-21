@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D卡片列表</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card-item data-tilt data-tilt-glare data-tilt-max-glare="0.8"">
+      <div class="role">
+        <img src="./images/hero.png" alt="">
+      </div>
+      <div class="des">
+        <h6>LEVEL 5</h6>
+        <h1>The Giant</h1>
+        <p>
+          Slow,steady and powerful,Giants are massive warriors that soak up huge amounts of damage.
+        </p>
+      </div>
+      <div class="btn-list">
+        <div class="btn">
+          <h3>2</h3>
+          <span>TRAIN</span>
+        </div>
+        <div class="btn">
+          <h3>12</h3>
+          <span>SPEED</span>
+        </div>
+        <div class="btn">
+          <h3>2250</h3>
+          <span>COST</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-item">
+      <div class="role">
+        <img src="./images/hero.png" alt="">
+      </div>
+      <div class="des">
+        <h6>LEVEL 5</h6>
+        <h1>The Giant</h1>
+        <p>
+          Slow,steady and powerful,Giants are massive warriors that soak up huge amounts of damage.
+        </p>
+      </div>
+      <div class="btn-list">
+        <div class="btn">
+          <h3>2</h3>
+          <span>TRAIN</span>
+        </div>
+        <div class="btn">
+          <h3>12</h3>
+          <span>SPEED</span>
+        </div>
+        <div class="btn">
+          <h3>2250</h3>
+          <span>COST</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-item">
+      <div class="role">
+        <img src="./images/hero.png" alt="">
+      </div>
+      <div class="des">
+        <h6>LEVEL 5</h6>
+        <h1>The Giant</h1>
+        <p>
+          Slow,steady and powerful,Giants are massive warriors that soak up huge amounts of damage.
+        </p>
+      </div>
+      <div class="btn-list">
+        <div class="btn">
+          <h3>2</h3>
+          <span>TRAIN</span>
+        </div>
+        <div class="btn">
+          <h3>12</h3>
+          <span>SPEED</span>
+        </div>
+        <div class="btn">
+          <h3>2250</h3>
+          <span>COST</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./node_modules/vanilla-tilt/dist/vanilla-tilt.min.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll('.card-item'), {
+      // max: 25,
+      // speed: 400
+    });
+  </script>
+</body>
+
+</html>
