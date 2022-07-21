@@ -10,82 +10,117 @@
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="card-item">
-      <div class="role">
-        <img src="../images/hero-1-2.png" alt="">
-      </div>
-      <div class="des">
-        <h6>LEVEL 5</h6>
-        <h1>The Giant</h1>
-        <p>
-          Slow,steady and powerful,Giants are massive warriors that soak up huge amounts of damage.
-        </p>
-      </div>
-      <div class="btn-list">
-        <div class="btn">
-          <h3>2</h3>
-          <span>TRAIN</span>
-        </div>
-        <div class="btn">
-          <h3>12</h3>
-          <span>SPEED</span>
-        </div>
-        <div class="btn">
-          <h3>2250</h3>
-          <span>COST</span>
-        </div>
-      </div>
+
+  <div class="blobs">
+    <div class="blob">2</div>
+    <div class="blob">1</div>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feBlend in="SourceGraphic" in2="goo" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="circle-content">
+    <div class="date">
+      <h1>30°C</h1>
     </div>
-    <div class="card-item">
-      <div class="role">
-        <img src="../images/hero-1-2.png" alt="">
-      </div>
-      <div class="des">
-        <h6>LEVEL 5</h6>
-        <h1>The Giant</h1>
-        <p>
-          Slow,steady and powerful,Giants are massive warriors that soak up huge amounts of damage.
-        </p>
-      </div>
-      <div class="btn-list">
-        <div class="btn">
-          <h3>2</h3>
-          <span>TRAIN</span>
-        </div>
-        <div class="btn">
-          <h3>12</h3>
-          <span>SPEED</span>
-        </div>
-        <div class="btn">
-          <h3>2250</h3>
-          <span>COST</span>
-        </div>
-      </div>
+    <div class="circle" data-circle="50">
+      <svg xmlns="http://www.w3.org/2000/svg" width="300px" height="300px">
+        <defs>
+          <linearGradient id="gridient">
+            <stop offset="0%" stop-color="#9eecd9" />
+            <stop offset="100%" stop-color="#2fb8ff" />
+          </linearGradient>
+        </defs>
+        <circle cx="150" cy="150" r="90" stroke-linecap="round" />
+      </svg>
     </div>
-    <div class="card-item">
-      <div class="role">
-        <img src="../images/hero-1-2.png" alt="">
-      </div>
-      <div class="des">
-        <h6>LEVEL 5</h6>
-        <h1>The Giant</h1>
-        <p>
-          Slow,steady and powerful,Giants are massive warriors that soak up huge amounts of damage.
-        </p>
-      </div>
-      <div class="btn-list">
-        <div class="btn">
-          <h3>2</h3>
-          <span>TRAIN</span>
+  </div>
+
+  <div class="container">
+    <div class="wrap">
+      <div class="card-item">
+        <div class="role">
+          <img src="../images/hero-1-2.png" alt="">
         </div>
-        <div class="btn">
-          <h3>12</h3>
-          <span>SPEED</span>
+        <div class="des">
+          <h6>LEVEL 5</h6>
+          <h1>The Giant</h1>
+          <p>
+            Slow,steady and powerful,Giants are massive warriors that soak up huge amounts of damage.
+          </p>
         </div>
-        <div class="btn">
-          <h3>2250</h3>
-          <span>COST</span>
+        <div class="btn-list">
+          <div class="btn">
+            <h3>2</h3>
+            <span>TRAIN</span>
+          </div>
+          <div class="btn">
+            <h3>12</h3>
+            <span>SPEED</span>
+          </div>
+          <div class="btn">
+            <h3>2250</h3>
+            <span>COST</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="role">
+          <img src="../images/hero-1-2.png" alt="">
+        </div>
+        <div class="des">
+          <h6>LEVEL 5</h6>
+          <h1>The Giant</h1>
+          <p>
+            Slow,steady and powerful,Giants are massive warriors that soak up huge amounts of damage.
+          </p>
+        </div>
+        <div class="btn-list">
+          <div class="btn">
+            <h3>2</h3>
+            <span>TRAIN</span>
+          </div>
+          <div class="btn">
+            <h3>12</h3>
+            <span>SPEED</span>
+          </div>
+          <div class="btn">
+            <h3>2250</h3>
+            <span>COST</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-item">
+        <div class="role">
+          <img src="../images/hero-1-2.png" alt="">
+        </div>
+        <div class="des">
+          <h6>LEVEL 5</h6>
+          <h1>The Giant</h1>
+          <p>
+            Slow,steady and powerful,Giants are massive warriors that soak up huge amounts of damage.
+          </p>
+        </div>
+        <div class="btn-list">
+          <div class="btn">
+            <h3>2</h3>
+            <span>TRAIN</span>
+          </div>
+          <div class="btn">
+            <h3>12</h3>
+            <span>SPEED</span>
+          </div>
+          <div class="btn">
+            <h3>2250</h3>
+            <span>COST</span>
+          </div>
         </div>
       </div>
     </div>
@@ -97,6 +132,16 @@
       // max: 25,
       // speed: 400
     });
+
+    const circleDom = document.querySelector('.circle');
+    const { circle } = circleDom.dataset;
+    let maxValue = 565;
+    let timer = setInterval(() => {
+      circleDom.style.setProperty('--circle', maxValue -= 1);
+      if (maxValue < 565 * (100 - circle) / 100) {
+        clearInterval(timer);
+      }
+    }, 10)
   </script>
 </body>
 

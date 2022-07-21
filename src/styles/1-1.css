@@ -4,6 +4,10 @@
 }
 
 body {
+  background-color: #000000;
+}
+
+.container {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -11,6 +15,91 @@ body {
   justify-content: center;
   background-image: url("../images/bg-1-1.jpeg");
   background-size: cover;
+}
+
+.blobs {
+  height: 200px;
+  filter: url("#goo");
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f6901a; */
+}
+
+@keyframes blob-left-top-anim {
+  0% {
+    transform: scale(1.1) translate(0, 0);
+  }
+  33% {
+    transform: scale(0.9) translate(65px, 0);
+  }
+  62% {
+    transform: scale(0.7) translate(65px, 65px);
+  }
+  94% {
+    transform: scale(1.1) translate(0, 0);
+  }
+}
+
+.blob {
+  /* position: absolute; */
+  background: #2fb8ff;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 100%;
+  /* margin-top: -50px; */
+  /* margin-left: -50px; */
+  animation: blob-left-top-anim cubic-bezier(0.77, 0, 0.175, 1) 4s infinite;
+}
+
+.circle-content {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.date {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 30px #000000, -5px -5px 30px #424242,
+    0 0 0 20px #202020 inset, -10px -10px 30px #424242 inset,
+    10px 10px 30px #000000 inset;
+}
+
+.date h1 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  fill: none;
+  stroke: url(#gridient);
+  stroke-width: 10px;
+  stroke-dasharray: 565;
+  stroke-dashoffset: var(--circle);
+  transform: rotate(-90deg);
 }
 
 .wrap {
