@@ -9,7 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("./images/bg.jpeg");
+  background-image: url("../images/bg-1-1.jpeg");
   background-size: cover;
 }
 
@@ -37,7 +37,7 @@ body {
   border-radius: 20px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background: url("../3D透视卡片/images/listbg1.jpeg") no-repeat;
+  background: url("../images/listbg1-1-3.jpeg") no-repeat;
   background-position: 100% 100%;
   background-size: 130%;
   position: relative;
