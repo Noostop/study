@@ -1,5 +1,5 @@
 {
-  "name": "3D透视卡片",
+  "name": "学习",
   "packageManager": "yarn@3.2.1",
   "dependencies": {
     "vanilla-tilt": "^1.7.2"
